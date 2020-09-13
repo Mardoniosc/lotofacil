@@ -1,5 +1,5 @@
 # coding: utf-8
-numeros_sorteador = [1,4,6,7,10,12,13,16,17,18,19,20,22,23,24]
+numeros_sorteador = [2,3,4,5,6,9,10,12,14,15,17,19,22,23,25]
 
 def resultado_lista_inteiro(resultado):
     resultado = resultado.replace(' ', ',')
@@ -22,22 +22,21 @@ with open('jogos.txt', 'r') as fd:
                 y = (resultado_lista_inteiro(x))
                 acertos = compara_resultado(numeros_sorteador, y)
 
-                print("Resultado do %d° jogo acertou %d" % (jogo,acertos))
 
                 if acertos == 15:
-                    print("GANHOU GANHOU GANHOU MIZERAVEL")
+                    print("Resultado do %d° jogo acertou %d" % (jogo,acertos))    
                     ganhos = ganhos + 1124060
                 elif acertos == 14:
-                    print("Eita! \n Foi quase essa mizera!")
+                    print("Resultado do %d° jogo acertou %d" % (jogo,acertos))
                     ganhos = ganhos + 1500
                 elif acertos == 13:
-                    print('Pelo menos não perdi dinheiro nessa!! :(')
+                    print("Resultado do %d° jogo acertou %d" % (jogo,acertos))
                     ganhos = ganhos + 25
                 elif acertos == 12:
-                    print("Talvez de de cobrir os gastos")
+                    print("Resultado do %d° jogo acertou %d" % (jogo,acertos))
                     ganhos = ganhos + 10
                 elif acertos == 11:
-                    print("Pelo menos não fiquei sem ganhar nada!!")
+                    print("Resultado do %d° jogo acertou %d" % (jogo,acertos))
                     ganhos = ganhos + 5
 
                 jogo +=1
